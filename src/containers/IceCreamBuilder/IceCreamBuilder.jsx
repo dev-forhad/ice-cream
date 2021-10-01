@@ -35,7 +35,7 @@ export default class IceCreamBuilder extends Component {
         const workingScoops = [...scoops];
         console.log(workingScoops);
         const scoopIndex = workingScoops.findIndex((sc) => sc === scoop);
-        if(scoopIndex>=1){
+        if(scoopIndex>=0){
             workingScoops.splice(scoopIndex,1);
         console.log(workingScoops);
         this.setState((prevState) => {
